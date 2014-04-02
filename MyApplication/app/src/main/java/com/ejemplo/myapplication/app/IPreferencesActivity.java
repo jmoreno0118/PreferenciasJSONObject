@@ -65,7 +65,7 @@ public class IPreferencesActivity extends ActionBarActivity {
         tactivo.setVisibility(View.INVISIBLE);
 
         barra.setVisibility(View.VISIBLE);
-        obtenerTextoInternet();
+        leerMemoriaInterna();
     }
 
 
@@ -177,7 +177,7 @@ public class IPreferencesActivity extends ActionBarActivity {
             textoMemoria = sBuilder.toString();
             setInfo(textoMemoria);
         }catch(Exception e){
-            noUser();
+            obtenerTextoInternet();
         }
     }
 
